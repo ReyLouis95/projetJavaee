@@ -7,7 +7,7 @@ public interface IDao<T> {
 
 	List<T> read() throws SQLException;
 	T readById(int id) throws SQLException;
-	void create(T objet) throws SQLException;
-	void update(T objet) throws SQLException;
-	void delete(int id) throws SQLException;
+	boolean create(T objet) throws SQLException;
+	boolean update(T objet) throws SQLException;
+	boolean delete(int id) throws SQLException;
 }

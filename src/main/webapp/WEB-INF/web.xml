@@ -5,12 +5,63 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-      <servlet-name>Restaurant</servlet-name>
-      <servlet-class>com.iut.servlet.Hello</servlet-class>
+      <servlet-name>AjouterRestaurant</servlet-name>
+      <servlet-class>com.iut.controleurs.AjouterRestaurantControleur</servlet-class>      
   </servlet>
+  
+<servlet>
+	<servlet-name>ModifierRestaurant</servlet-name>
+	<servlet-class>com.iut.controleurs.ModifierRestaurantControleur</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>SupprimerRestaurant</servlet-name>
+	<servlet-class>com.iut.controleurs.SupprimerRestaurantControleur</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>AjouterPlat</servlet-name>
+	<servlet-class>com.iut.controleurs.AjouterPlatControleur</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>ModifierPlat</servlet-name>
+	<servlet-class>com.iut.controleurs.ModifierPlatControleur</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>SupprimerPlat</servlet-name>
+	<servlet-class>com.iut.controleurs.SupprimerPlatControleur</servlet-class>
+</servlet>
+
 
   <servlet-mapping>
-      <servlet-name>Restaurant</servlet-name>
-      <url-pattern>/restaurant</url-pattern>
+      <servlet-name>AjouterRestaurant</servlet-name>
+      <url-pattern>/ajouterRestau</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ModifierRestaurant</servlet-name>
+  	<url-pattern>/modifierRestau</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>SupprimerRestaurant</servlet-name>
+  	<url-pattern>/supprimerRestau</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AjouterPlat</servlet-name>
+  	<url-pattern>/ajouterPlat</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ModifierPlat</servlet-name>
+  	<url-pattern>/modifierPlat</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>SupprimerPlat</servlet-name>
+  	<url-pattern>/supprimerPlat</url-pattern>
   </servlet-mapping>
 </web-app>
